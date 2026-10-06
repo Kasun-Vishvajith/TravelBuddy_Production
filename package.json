@@ -9,7 +9,12 @@
     "lint": "next lint",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate && tsx scripts/document-db.ts generate",
+    "db:documents:generate": "tsx scripts/document-db.ts generate",
+    "db:documents:validate": "tsx scripts/document-db.ts validate",
+    "db:documents:deploy": "tsx scripts/document-db.ts deploy",
+    "test:documents": "tsx scripts/check-documents.ts",
+    "test:documents:integration": "tsx scripts/check-documents-integration.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
