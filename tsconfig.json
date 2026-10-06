@@ -34,7 +34,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next-ui-preview/types/**/*.ts",
-    ".next-ui-build/types/**/*.ts"
+    ".next-ui-build/types/**/*.ts",
+    ".next-google-auth-preview/types/**/*.ts",
+    ".next-google-auth-build/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
